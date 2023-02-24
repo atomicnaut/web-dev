@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>HTML</title>
+	</head>
+	<body>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Our team</a></li>
+				<li><a href="#">Projects</a></li>
+				<li><a href="mailto:">Contacts</a></li>
+			</ul>
+
+			<form>
+				<input type="search" name="q" placeholder="Search query" />
+				<input type="submit" value="Go!" />
+			</form>
+
+			<header>
+				<h1>HTML Page</h1>
+			</header>
+
+			<!-- I am a comment -->
+			<main>
+				<article>
+					<h2>Semantics</h2>
+					<p>Lorem ipsum<sup>1</sup> dolor sit amet, consectetur adipisicing elit. <em>Donec a diam lectus.</em> Set sit amet ipsum mauris. Maecenas congue ligula as quam viverra nec consectetur ant hendrerit. Donec et mollis dolor. Praesent et diam <strong>libero egestas mattis</strong> sit <mark>amet vitae augue</mark>. Nam tincidunt congue enim, ut porta lorem lacinia<sub>2</sub> consectetur.</p>
+
+					<h3>Subsection</h3>
+					<p>Donec ut librero <u>sed accu vehicula ultricies</u> a non tortor. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor.</p>
+				</article>
+				<hr />
+
+				<aside>
+					<h2>Lists</h2>
+					<ul>
+						<li>lorem</li>
+						<li>ipsum</li>
+						<li>
+							dolor
+							<ol>
+								<li>uno</li>
+								<li>dos</li>
+							</ol>
+						</li>
+						<li>semper</li>
+					</ul>
+					<dl>
+						<dt>Semantic HTML</dt>
+						<dd>Use the elements based on their <b>semantic</b> meaning, not their appearance.</dd>
+					</dl>
+				</aside>
+				<hr />
+
+				<article>
+					<h2>Blockquotes</h2>
+					<blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
+						<p>
+							The <strong>HTML <code>&lt;blockquote&gt;</code> Element</strong> (or <em>HTML Block Quotation Element</em>) indicates that the enclosed text is an extended quotation.
+						</p>
+						<cite>- MDN blockquote page</cite>
+					</blockquote>
+					<p>
+						The quote element — <code>&lt;q&gt;</code> — is <q cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q">intended for short quotations that don't require paragraph breaks.</q> — <a href="/en-US/docs/Web/HTML/Element/q"> <cite>MDN q page</cite></a
+						>.
+					</p>
+				</article>
+				<hr />
+
+				<article>
+					<h2>Address</h2>
+					<address>
+						<p>
+							Chris Mills<br />
+							Manchester<br />
+							The Grim North<br />
+							UK
+						</p>
+
+						<ul>
+							<li>Tel: 01234 567 890</li>
+							<li>Email: me@grim-north.co.uk</li>
+						</ul>
+					</address>
+				</article>
+				<hr />
+
+				<article>
+					<h2>Code</h2>
+					<pre><code>const para = document.querySelector('p');
+
+						para.onclick = function() {
+						  alert('Owww, stop poking me!');
+						}</code></pre>
+
+					<p>You shouldn't use presentational elements like <code>&lt;font&gt;</code> and <code>&lt;center&gt;</code>.</p>
+
+					<p>In the above JavaScript example, <var>para</var> represents a paragraph element.</p>
+
+					<p>Select all the text with <kbd>Ctrl</kbd>/<kbd>Cmd</kbd> + <kbd>A</kbd>.</p>
+				</article>
+				<hr />
+
+				<article>
+					<h2>Date and Time</h2>
+					<time datetime="2023-02-04T19:30">7.30pm, 4 February 2023</time>
+				</article>
+				<hr />
+
+				<article>
+					<h2>Images</h2>
+					<figure>
+						<img src="https://i.pinimg.com/originals/89/8d/63/898d63592c6583420870d739c844c66e.jpg" alt="Astronaut mowing the moon" width="500px" />
+						<figcaption>Astronaut mowing the moon</figcaption>
+					</figure>
+				</article>
+				<hr />
+
+				<article>
+					<h2>Videos</h2>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/OHMgPNSP1RU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				</article>
+				<hr />
+
+				<article>
+					<h2>Tables</h2>
+					<table border="1">
+						<caption>
+							Junkyard Dogs
+						</caption>
+						<colgroup>
+							<col />
+							<col style="background-color: #97db9a" />
+						</colgroup>
+						<thead>
+							<tr>
+								<th>&nbsp;</th>
+								<th>Knocky</th>
+								<th>Flor</th>
+								<th>Ella</th>
+								<th>Juan</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>Breed</th>
+								<td>Jack Russell</td>
+								<td>Poodle</td>
+								<td>Streetdog</td>
+								<td>Cocker Spaniel</td>
+							</tr>
+							<tr>
+								<th>Age</th>
+								<td>16</td>
+								<td>9</td>
+								<td>10</td>
+								<td>5</td>
+							</tr>
+							<tr>
+								<th>Owner</th>
+								<td>Mother-in-law</td>
+								<td>
+									<table>
+										<tr>
+											<td>Me</td>
+											<td>Brother</td>
+										</tr>
+									</table>
+								</td>
+								<td>Me</td>
+								<td>Sister-in-law</td>
+							</tr>
+							<tr>
+								<th>Eating Habits</th>
+								<td>Eats everyone's leftovers</td>
+								<td>Nibbles at food</td>
+								<td>Hearty eater</td>
+								<td>Will eat till he explodes</td>
+							</tr>
+						</tbody>
+					</table>
+				</article>
+				<hr />
+
+				<footer>
+					<p>©Copyright by nobody. All rights reversed.</p>
+				</footer>
+			</main>
+		</nav>
+	</body>
+</html>

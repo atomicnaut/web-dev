@@ -1,0 +1,254 @@
+/* --- Elements --- */
+h1 {
+	color: red;
+}
+
+p,
+li {
+	color: green;
+}
+
+/* --- Lists --- */
+li {
+	/* list-style-type: none; */
+	/* list-style-type: circle; */
+	list-style-position: outside;
+}
+
+/* --- Classes --- */
+.special {
+	color: orange;
+	font-weight: bold;
+}
+
+/* --- Combinators --- */
+
+/* Target any li element that has a class of special */
+li.special {
+	letter-spacing: 0.01em;
+}
+
+/* Descendant combinator -- target any em element that is a child of li */
+li em {
+	color: rebeccapurple;
+	font-weight: bold;
+}
+
+p span {
+	color: red;
+}
+
+/* Adjacent sibling combinator -- target any p element that comes directly after a h1 element at the same heirarchy level in the HTML */
+h1 + p {
+	font-size: 200%;
+}
+
+/* Target all link elements based on state (hover) */
+a:hover {
+	text-decoration: none;
+}
+
+/* Target any element with a class of special, which is inside a paragraph, which comes just after a h1, which is inside a body */
+body h1 + p .special {
+	color: yellow;
+	background-color: black;
+	padding: 5px;
+}
+
+/* Target any p element that is direct child of article element */
+article > p {
+	font-weight: bold;
+	opacity: 0.6;
+}
+
+/* --- Functions --- */
+.outer {
+	border: 5px solid black;
+}
+
+/* calc */
+.box {
+	padding: 10px;
+	width: calc(90% - 30px);
+	background-color: rebeccapurple;
+	color: white;
+}
+
+/* transform */
+.box-2 {
+	margin: 30px;
+	width: 100px;
+	height: 100px;
+	background-color: rebeccapurple;
+	transform: rotate(0.8turn);
+}
+
+/* --- Box Model --- */
+.box-model {
+	border: 5px solid rebeccapurple;
+	background-color: lightgray;
+	padding: 40px;
+	margin: 40px;
+	width: 300px;
+	height: 150px;
+	border-radius: 10px;
+}
+
+.alternate {
+	box-sizing: border-box;
+}
+/* --- Reset --- */
+/* html {
+	box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+} */
+
+/* --- Inline --- */
+.inline {
+	margin: 20px;
+	padding: 20px;
+	width: 80px;
+	height: 50px;
+	background-color: lightblue;
+	border: 2px solid blue;
+}
+
+.inline-block {
+	margin: 20px;
+	padding: 20px;
+	width: 80px;
+	height: 50px;
+	background-color: lightblue;
+	border: 2px solid blue;
+	display: inline-block;
+}
+
+/* --- Backgrounds --- */
+.wrapper > .box {
+	height: 100px;
+	width: 200px;
+	display: inline-block;
+	margin-right: 20px;
+}
+.a {
+	background-image: linear-gradient(105deg, rgba(0, 249, 255, 1) 39%, rgba(51, 56, 57, 1) 96%);
+}
+
+.b {
+	background-image: radial-gradient(circle, rgba(0, 249, 255, 1) 39%, rgba(51, 56, 57, 1) 96%);
+	background-size: 50px 25px;
+}
+
+/* --- Overflow --- */
+.overflow {
+	border: 1px solid #333333;
+	margin-top: 20px;
+	width: 200px;
+	height: 100px;
+	overflow: auto;
+}
+
+/* --- Relative Units --- */
+/* em - font size of the parent */
+/* rem - font size of the root element */
+
+/* --- Images --- */
+/* If you instead use max-width: 100%, and its intrinsic width is smaller than its container, the image will not be forced to stretch and become larger, thus preventing pixelation */
+
+/* --- Forms --- */
+input[type='text'],
+input[type='email'] {
+	border: 2px solid #000;
+	margin: 0 0 1em 0;
+	padding: 10px;
+	width: 25%;
+}
+
+input[type='submit'] {
+	border: 3px solid #333;
+	background-color: #999;
+	border-radius: 5px;
+	padding: 10px 2em;
+	font-weight: bold;
+	color: #fff;
+}
+
+input[type='submit']:hover,
+input[type='submit']:focus {
+	background-color: #333;
+}
+
+/* form reset */
+button,
+input,
+select,
+textarea {
+	font-family: inherit;
+	font-size: 100%;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+textarea {
+	overflow: auto;
+}
+
+/* --- Tables --- */
+table {
+	table-layout: fixed;
+	width: 100%;
+	border-collapse: collapse;
+	border: 3px solid purple;
+}
+
+thead {
+	text-align: left;
+}
+
+tbody {
+	text-align: left;
+}
+
+tfoot {
+	text-align: left;
+}
+
+thead th:nth-child(1) {
+	width: 30%;
+}
+
+thead th:nth-child(2) {
+	width: 20%;
+}
+
+thead th:nth-child(3) {
+	width: 15%;
+}
+
+thead th:nth-child(4) {
+	width: 35%;
+}
+
+th,
+td {
+	padding: 20px;
+}
+
+tbody tr:nth-child(odd) {
+	background-color: #eee;
+}
+
+caption {
+	font-family: 'Rock Salt', cursive;
+	padding: 10px;
+	font-style: italic;
+	caption-side: top;
+	color: #666;
+	text-align: left;
+	letter-spacing: 1px;
+}

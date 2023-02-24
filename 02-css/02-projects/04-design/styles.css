@@ -1,0 +1,24 @@
+/* --- General --- */
+html {
+	font-family: sans-serif;
+}
+
+p {
+	/* sizing */
+	width: 400px;
+	line-height: 10;
+	margin: 200px auto 0;
+	/* text */
+	text-align: center;
+	font-size: 2rem;
+	color: whitesmoke;
+	text-shadow: 2px 2px 2px black;
+	/* background */
+	background-color: red;
+	background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+	/* border */
+	border: 2px solid rgb(158, 0, 0);
+	border-radius: 20px;
+	/* box shadow */
+	box-shadow: 4px 4px 12px black, inset 3px 3px 5px rgba(255, 255, 255, 0.5), inset -4px -4px 8px rgba(0, 0, 0, 0.7);
+}
